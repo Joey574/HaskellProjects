@@ -1,5 +1,6 @@
 main :: IO ()
 main = do
+    putStrLn "Enter an Integer array in the form:\n[a,b,c,d]"
     listStr <- getLine
     let list = read listStr :: [Int]
     let sorted = quicksort list
